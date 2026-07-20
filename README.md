@@ -4,6 +4,46 @@ Private, personal Codex tooling for the full Next.js App Router workflow. The re
 
 The toolkit is framework-first and project-neutral. It inspects the installed Next.js version and active configuration instead of assuming one framework release. Optional stack skills activate only when their library is installed or explicitly requested.
 
+## Repository structure
+
+```text
+.
+├── .codex/agents/       Personal Codex agent definitions
+├── .github/workflows/   GitHub Actions validation
+├── docs/                Design and maintenance documentation
+├── evals/               Skill evaluation cases
+├── fixtures/            Sample projects used by deterministic tests
+├── profiles/            Named installer profiles
+├── references/          Repository-wide machine-readable metadata
+├── scripts/             Installation, detection, validation, and eval tools
+├── skills/              Reusable Next.js workflow skills
+└── tests/               Installer and detector unit tests
+```
+
+| Folder | Purpose |
+| --- | --- |
+| `.codex/agents/` | Contains the five personal Codex agent definitions in TOML format. The installer links these files into `~/.codex/agents` so Codex can discover the architect, builder, reviewer, debugger, and migrator agents globally. |
+| `.github/workflows/` | Runs repository validation and deterministic unit tests on pushes and pull requests. It checks the same committed artifacts without running token-consuming live model evals. |
+| `docs/` | Holds longer-lived repository documentation: the capability matrix, version-detection policy, and maintenance workflow. |
+| `evals/` | Stores the machine-readable evaluation suite. `cases.json` provides one normal case and one misuse or boundary case for every skill. |
+| `fixtures/` | Provides small, non-production Next.js project shapes for testing context detection across versions, proxy or middleware conventions, integrations, static configuration, dynamic configuration, and invalid input. |
+| `profiles/` | Defines the skill sets installed by `core`, `ui`, `data-auth`, `testing`, `backend`, `platform`, and `full`. Profile references are expanded and deduplicated by the installer. |
+| `references/` | Contains repository-level metadata used by validation and tooling. `skill-catalog.json` is the canonical machine-readable list of skill names, titles, and trigger descriptions. |
+| `scripts/` | Contains the symlink installer, non-executing Next.js context detector, repository validator, and eval-case runner. These scripts use Python or Node.js standard-library functionality and do not require project dependencies. |
+| `skills/` | Contains the 16 framework capabilities and eight optional stack adapters. Each folder is an independently installable Codex skill with no named dependency on another skill. |
+| `tests/` | Contains standard-library Python unit tests for profile expansion, installation safety, idempotency, uninstall behavior, legacy cleanup, collisions, and context detection. |
+
+Every folder under `skills/` follows the same layout:
+
+```text
+skills/<skill-name>/
+├── SKILL.md              Trigger metadata and execution workflow
+├── agents/openai.yaml    UI name, summary, and default invocation prompt
+└── references/sources.md Primary sources, applicability, and verification date
+```
+
+Local live-eval result templates may be written to `.eval-results/`. That directory is ignored by Git and is not part of the committed evaluation suite.
+
 ## Install
 
 From this repository, preview the default full installation:
