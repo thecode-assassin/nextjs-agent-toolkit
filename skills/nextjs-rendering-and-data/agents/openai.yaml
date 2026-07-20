@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Rendering and Data"
+  short_description: "Workflow guidance for Next.js Rendering and Data"
+  default_prompt: "Use $nextjs-rendering-and-data to handle this task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Performance"
+  short_description: "Workflow guidance for Next.js Performance"
+  default_prompt: "Use $nextjs-performance to handle this task."

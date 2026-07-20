@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Mutations and Forms"
+  short_description: "Workflow guidance for Next.js Mutations and Forms"
+  default_prompt: "Use $nextjs-mutations-and-forms to handle this task."

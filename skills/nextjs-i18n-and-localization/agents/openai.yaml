@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Internationalization and Localization"
+  short_description: "Next.js i18n and localization workflow"
+  default_prompt: "Use $nextjs-i18n-and-localization to handle this task."

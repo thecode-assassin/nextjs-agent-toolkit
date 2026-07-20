@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Testing Strategy"
+  short_description: "Workflow guidance for Next.js Testing Strategy"
+  default_prompt: "Use $nextjs-testing-strategy to handle this task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js on Vercel"
+  short_description: "Workflow guidance for Next.js on Vercel"
+  default_prompt: "Use $nextjs-vercel to handle this task."

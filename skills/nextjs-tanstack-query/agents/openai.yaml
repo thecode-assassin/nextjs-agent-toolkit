@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js TanStack Query Integration"
+  short_description: "Workflow guidance for Next.js TanStack Query Integration"
+  default_prompt: "Use $nextjs-tanstack-query to handle this task."

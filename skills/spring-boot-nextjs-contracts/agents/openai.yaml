@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spring Boot and Next.js Contracts"
+  short_description: "Workflow guidance for Spring Boot and Next.js Contracts"
+  default_prompt: "Use $spring-boot-nextjs-contracts to handle this task."

@@ -1,0 +1,26 @@
+{
+  "core": [
+    "nextjs-project-configuration",
+    "nextjs-routing-and-navigation",
+    "nextjs-rendering-and-data",
+    "nextjs-mutations-and-forms",
+    "nextjs-route-handlers",
+    "nextjs-auth-and-security",
+    "nextjs-loading-errors-and-recovery",
+    "nextjs-ui-and-accessibility",
+    "nextjs-metadata-and-seo",
+    "nextjs-i18n-and-localization",
+    "nextjs-performance",
+    "nextjs-observability",
+    "nextjs-deployment",
+    "nextjs-testing-strategy",
+    "nextjs-upgrades",
+    "nextjs-pr-review"
+  ],
+  "ui": ["@core", "nextjs-tailwind-shadcn-ui"],
+  "data-auth": ["@core", "nextjs-authjs", "nextjs-tanstack-query"],
+  "testing": ["@core", "nextjs-vitest", "nextjs-playwright"],
+  "backend": ["@core", "nextjs-external-backend-transport", "spring-boot-nextjs-contracts"],
+  "platform": ["@core", "nextjs-vercel"],
+  "full": ["@ui", "@data-auth", "@testing", "@backend", "@platform"]
+}

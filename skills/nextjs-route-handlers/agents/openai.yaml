@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Route Handlers"
+  short_description: "Workflow guidance for Next.js Route Handlers"
+  default_prompt: "Use $nextjs-route-handlers to handle this task."

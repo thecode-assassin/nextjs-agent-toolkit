@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Observability"
+  short_description: "Workflow guidance for Next.js Observability"
+  default_prompt: "Use $nextjs-observability to handle this task."

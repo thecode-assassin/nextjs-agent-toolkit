@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Auth.js Integration"
+  short_description: "Workflow guidance for Next.js Auth.js Integration"
+  default_prompt: "Use $nextjs-authjs to handle this task."

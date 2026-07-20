@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Deployment"
+  short_description: "Workflow guidance for Next.js Deployment"
+  default_prompt: "Use $nextjs-deployment to handle this task."

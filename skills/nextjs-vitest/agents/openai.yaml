@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Vitest"
+  short_description: "Workflow guidance for Next.js Vitest"
+  default_prompt: "Use $nextjs-vitest to handle this task."

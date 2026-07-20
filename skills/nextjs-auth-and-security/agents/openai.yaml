@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Authentication and Security"
+  short_description: "Workflow guidance for Next.js Authentication and Security"
+  default_prompt: "Use $nextjs-auth-and-security to handle this task."

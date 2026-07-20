@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Pull Request Review"
+  short_description: "Workflow guidance for Next.js Pull Request Review"
+  default_prompt: "Use $nextjs-pr-review to handle this task."

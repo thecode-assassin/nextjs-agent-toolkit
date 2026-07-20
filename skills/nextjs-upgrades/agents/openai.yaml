@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Upgrades"
+  short_description: "Workflow guidance for Next.js Upgrades"
+  default_prompt: "Use $nextjs-upgrades to handle this task."

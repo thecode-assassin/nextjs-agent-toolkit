@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Tailwind and shadcn/ui"
+  short_description: "Workflow guidance for Next.js Tailwind and shadcn/ui"
+  default_prompt: "Use $nextjs-tailwind-shadcn-ui to handle this task."

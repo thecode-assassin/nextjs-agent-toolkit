@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Playwright"
+  short_description: "Workflow guidance for Next.js Playwright"
+  default_prompt: "Use $nextjs-playwright to handle this task."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js External Backend Transport"
+  short_description: "Workflow guidance for Next.js External Backend Transport"
+  default_prompt: "Use $nextjs-external-backend-transport to handle this task."

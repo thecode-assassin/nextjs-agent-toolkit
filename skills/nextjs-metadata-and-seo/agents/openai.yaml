@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Metadata and SEO"
+  short_description: "Workflow guidance for Next.js Metadata and SEO"
+  default_prompt: "Use $nextjs-metadata-and-seo to handle this task."

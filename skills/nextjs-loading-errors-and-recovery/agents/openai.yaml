@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Loading, Errors, and Recovery"
+  short_description: "Workflow guidance for Next.js Loading, Errors, and Recovery"
+  default_prompt: "Use $nextjs-loading-errors-and-recovery to handle this task."

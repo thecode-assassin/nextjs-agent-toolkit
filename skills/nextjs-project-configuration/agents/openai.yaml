@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js Project Configuration"
+  short_description: "Workflow guidance for Next.js Project Configuration"
+  default_prompt: "Use $nextjs-project-configuration to handle this task."

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "nextjs-project-configuration",
+    "title": "Next.js Project Configuration",
+    "description": "Inspect, design, and change Next.js App Router project configuration, including package scripts, next.config files, TypeScript, environment variables, runtime choices, output modes, and feature flags. Use for new project setup, configuration review, build-mode changes, or diagnosing configuration-dependent behavior."
+  },
+  {
+    "name": "nextjs-routing-and-navigation",
+    "title": "Next.js Routing and Navigation",
+    "description": "Design, implement, and review Next.js App Router route trees, layouts, pages, dynamic segments, route groups, parallel and intercepting routes, redirects, rewrites, proxy or middleware behavior, and client navigation. Use when changing URL structure, navigation, route ownership, or request interception."
+  },
+  {
+    "name": "nextjs-rendering-and-data",
+    "title": "Next.js Rendering and Data",
+    "description": "Design and refactor Next.js App Router rendering and read-data ownership across Server Components, Client Components, Suspense, streaming, direct server access, fetch, caching, and revalidation. Use when deciding where data is read, what crosses the server-client boundary, or how freshness works."
+  },
+  {
+    "name": "nextjs-mutations-and-forms",
+    "title": "Next.js Mutations and Forms",
+    "description": "Design, implement, and review Next.js App Router mutations and forms using Server Actions, progressive enhancement, validation, action state, pending UI, redirects, and cache updates. Use for same-application writes, form workflows, mutation ownership, or post-submit freshness."
+  },
+  {
+    "name": "nextjs-route-handlers",
+    "title": "Next.js Route Handlers",
+    "description": "Design, implement, and review Next.js App Router Route Handlers, HTTP method exports, request parsing, validation, response semantics, runtime selection, caching, streaming, webhooks, and thin endpoint architecture. Use for API endpoints, external consumers, callbacks, or explicit HTTP contracts."
+  },
+  {
+    "name": "nextjs-auth-and-security",
+    "title": "Next.js Authentication and Security",
+    "description": "Design and review framework-neutral authentication, authorization, data exposure, request forgery defenses, security headers, server-only boundaries, data access layers, and DTOs in Next.js App Router applications. Use for access control, session boundaries, sensitive data, or security reviews."
+  },
+  {
+    "name": "nextjs-loading-errors-and-recovery",
+    "title": "Next.js Loading, Errors, and Recovery",
+    "description": "Design and refactor Next.js App Router loading, empty, not-found, forbidden, unauthorized, error, global error, and recovery experiences. Use when adding route-level boundaries, handling expected failures, preserving framework control flow, or improving streaming and retry behavior."
+  },
+  {
+    "name": "nextjs-ui-and-accessibility",
+    "title": "Next.js UI and Accessibility",
+    "description": "Build and review accessible, responsive, server-first Next.js App Router interfaces, component boundaries, forms, dialogs, navigation, images, fonts, and design-system integration. Use for UI implementation or review when framework rendering and accessibility must be considered together."
+  },
+  {
+    "name": "nextjs-metadata-and-seo",
+    "title": "Next.js Metadata and SEO",
+    "description": "Design, implement, and review Next.js App Router metadata, canonical and alternate URLs, Open Graph and social cards, robots, sitemaps, icons, structured data, and crawl behavior. Use for search discoverability, share previews, or route-specific metadata."
+  },
+  {
+    "name": "nextjs-i18n-and-localization",
+    "title": "Next.js Internationalization and Localization",
+    "description": "Design and refactor Next.js App Router internationalization, locale routing, language negotiation, localized metadata, dictionaries, formatting, and translation loading. Use when adding locales, changing locale URLs, or reviewing localization architecture."
+  },
+  {
+    "name": "nextjs-performance",
+    "title": "Next.js Performance",
+    "description": "Measure, diagnose, and improve Next.js App Router performance across rendering, client boundaries, JavaScript bundles, images, fonts, scripts, streaming, caching, and Core Web Vitals. Use for performance audits, regressions, bundle growth, or slow routes."
+  },
+  {
+    "name": "nextjs-observability",
+    "title": "Next.js Observability",
+    "description": "Design and implement Next.js App Router observability and runtime debugging with instrumentation, request-error capture, Web Vitals, structured logs, traces, metrics, correlation, and privacy controls. Use for production diagnosis, telemetry setup, or runtime-specific failures."
+  },
+  {
+    "name": "nextjs-deployment",
+    "title": "Next.js Deployment",
+    "description": "Plan, configure, and verify provider-neutral Next.js App Router deployments, including build output, Node.js servers, containers, static export, runtime capabilities, environment variables, caching, assets, health checks, and rollback readiness. Use when preparing or diagnosing deployment."
+  },
+  {
+    "name": "nextjs-testing-strategy",
+    "title": "Next.js Testing Strategy",
+    "description": "Design a risk-based test strategy for Next.js App Router applications across pure logic, components, server boundaries, route handlers, accessibility, browser flows, and production builds. Use when choosing test layers, reviewing coverage, or reducing slow and brittle tests."
+  },
+  {
+    "name": "nextjs-upgrades",
+    "title": "Next.js Upgrades",
+    "description": "Plan and implement evidence-based Next.js and React upgrades, App Router migrations, codemods, deprecated API replacements, and compatibility checks. Use when changing framework versions, migrating router architecture, or resolving version-specific breakage."
+  },
+  {
+    "name": "nextjs-pr-review",
+    "title": "Next.js Pull Request Review",
+    "description": "Review Next.js App Router pull requests for correctness, regressions, security, rendering and cache mistakes, route behavior, accessibility, performance, tests, and deployment risk. Use when reviewing a diff, branch, commit, or proposed implementation."
+  },
+  {
+    "name": "nextjs-authjs",
+    "title": "Next.js Auth.js Integration",
+    "description": "Design, implement, and review Auth.js integration in Next.js App Router projects, including auth configuration, handlers, sessions, callbacks, providers, server access, authorization, and testing. Use only when Auth.js or next-auth is installed or explicitly requested."
+  },
+  {
+    "name": "nextjs-tanstack-query",
+    "title": "Next.js TanStack Query Integration",
+    "description": "Design, implement, and review TanStack Query integration in Next.js App Router projects, including provider placement, QueryClient lifetime, server prefetch, hydration, streaming, query ownership, mutations, invalidation, and testing. Use only when TanStack Query is installed or explicitly requested."
+  },
+  {
+    "name": "nextjs-tailwind-shadcn-ui",
+    "title": "Next.js Tailwind and shadcn/ui",
+    "description": "Build and review Next.js App Router interfaces using installed Tailwind CSS and shadcn/ui conventions, including setup, tokens, themes, component composition, responsive design, forms, dialogs, accessibility, and server-client boundaries. Use only when Tailwind or shadcn/ui is installed or requested."
+  },
+  {
+    "name": "nextjs-vitest",
+    "title": "Next.js Vitest",
+    "description": "Configure, write, and repair hermetic Vitest tests for Next.js App Router projects, including React components, hooks, utilities, route boundaries, mocks, jsdom, and coverage. Use only when Vitest is installed or explicitly requested."
+  },
+  {
+    "name": "nextjs-playwright",
+    "title": "Next.js Playwright",
+    "description": "Configure, write, and debug Playwright end-to-end tests for Next.js App Router projects, including production-like startup, navigation, authentication state, fixtures, network boundaries, accessibility, and CI artifacts. Use only when Playwright is installed or explicitly requested."
+  },
+  {
+    "name": "nextjs-vercel",
+    "title": "Next.js on Vercel",
+    "description": "Configure, deploy, and diagnose Next.js App Router projects on Vercel, including build settings, environments, functions, regions, caching, image behavior, observability, previews, domains, and rollbacks. Use only for Vercel targets or when Vercel configuration is present."
+  },
+  {
+    "name": "nextjs-external-backend-transport",
+    "title": "Next.js External Backend Transport",
+    "description": "Design and implement typed HTTP transport between Next.js App Router applications and external backends, including server and browser clients, auth and CSRF propagation, timeouts, cancellation, retries, error normalization, caching, and observability. Use when a Next.js frontend calls a separate HTTP service."
+  },
+  {
+    "name": "spring-boot-nextjs-contracts",
+    "title": "Spring Boot and Next.js Contracts",
+    "description": "Review, synchronize, and test HTTP contracts between Spring Boot backends and Next.js TypeScript clients, including DTO shapes, nullability, enums, validation, errors, pagination, dates, authentication, OpenAPI, and compatibility. Use when both Spring Boot and Next.js participate in the same API contract."
+  }
+]

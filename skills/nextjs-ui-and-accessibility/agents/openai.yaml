@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next.js UI and Accessibility"
+  short_description: "Workflow guidance for Next.js UI and Accessibility"
+  default_prompt: "Use $nextjs-ui-and-accessibility to handle this task."

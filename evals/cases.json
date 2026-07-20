@@ -1,0 +1,578 @@
+[
+  {
+    "id": "nextjs-project-configuration-normal",
+    "skill": "nextjs-project-configuration",
+    "kind": "normal",
+    "prompt": "Audit a Next.js App Router repository's package scripts, TypeScript settings, environment usage, and next.config before adding a production build option.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-project-configuration-boundary",
+    "skill": "nextjs-project-configuration",
+    "kind": "boundary",
+    "prompt": "A project uses a dynamically computed next.config.ts. Enable a new experimental flag and assume the newest Next.js behavior without inspecting package.json.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-routing-and-navigation-normal",
+    "skill": "nextjs-routing-and-navigation",
+    "kind": "normal",
+    "prompt": "Design a dashboard route tree with shared layouts, an optional modal interception flow, and stable public URLs.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-routing-and-navigation-boundary",
+    "skill": "nextjs-routing-and-navigation",
+    "kind": "boundary",
+    "prompt": "Rename middleware.ts to proxy.ts across this project because that is always the current convention.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-rendering-and-data-normal",
+    "skill": "nextjs-rendering-and-data",
+    "kind": "normal",
+    "prompt": "Refactor a product page so server reads, streaming boundaries, cache policy, and client interactivity have clear owners.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-rendering-and-data-boundary",
+    "skill": "nextjs-rendering-and-data",
+    "kind": "boundary",
+    "prompt": "A Server Component needs private user data. Fetch the app's own /api/me endpoint and put the response in a shared cache.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-mutations-and-forms-normal",
+    "skill": "nextjs-mutations-and-forms",
+    "kind": "normal",
+    "prompt": "Implement an accessible profile form with server validation, pending state, expected errors, and correct post-save freshness.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-mutations-and-forms-boundary",
+    "skill": "nextjs-mutations-and-forms",
+    "kind": "boundary",
+    "prompt": "Wrap redirect() in a broad try/catch inside a Server Action and use router.refresh, tag invalidation, and query invalidation after every submit.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-route-handlers-normal",
+    "skill": "nextjs-route-handlers",
+    "kind": "normal",
+    "prompt": "Implement a webhook Route Handler with signature validation, idempotency, useful status codes, and thin business-logic delegation.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-route-handlers-boundary",
+    "skill": "nextjs-route-handlers",
+    "kind": "boundary",
+    "prompt": "Create an internal Route Handler solely so a Server Component can call the database through HTTP, and cache every GET response.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-auth-and-security-normal",
+    "skill": "nextjs-auth-and-security",
+    "kind": "normal",
+    "prompt": "Review an account area for authentication, per-record authorization, server-only boundaries, DTO exposure, cookies, and CSRF risk.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-auth-and-security-boundary",
+    "skill": "nextjs-auth-and-security",
+    "kind": "boundary",
+    "prompt": "The root layout redirects unauthenticated users. Treat that as sufficient authorization for an admin mutation and serialize the whole user record.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-loading-errors-and-recovery-normal",
+    "skill": "nextjs-loading-errors-and-recovery",
+    "kind": "normal",
+    "prompt": "Add route-level loading, not-found, expected-error, and retry behavior to a nested order details route.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-loading-errors-and-recovery-boundary",
+    "skill": "nextjs-loading-errors-and-recovery",
+    "kind": "boundary",
+    "prompt": "Catch every thrown value around notFound and redirect, return a generic error, and put one global boundary around the entire application.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-ui-and-accessibility-normal",
+    "skill": "nextjs-ui-and-accessibility",
+    "kind": "normal",
+    "prompt": "Build a responsive settings page with a server-first layout, accessible navigation, form errors, focus handling, images, and dark mode.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-ui-and-accessibility-boundary",
+    "skill": "nextjs-ui-and-accessibility",
+    "kind": "boundary",
+    "prompt": "Turn the root layout into a Client Component to support one menu, implement links with div click handlers, and omit keyboard testing.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-metadata-and-seo-normal",
+    "skill": "nextjs-metadata-and-seo",
+    "kind": "normal",
+    "prompt": "Implement per-product metadata, canonical URLs, locale alternates, Open Graph images, sitemap entries, and validated structured data.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-metadata-and-seo-boundary",
+    "skill": "nextjs-metadata-and-seo",
+    "kind": "boundary",
+    "prompt": "Generate canonical URLs from the request host without a trusted production origin and emit unsanitized user text as JSON-LD.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-i18n-and-localization-normal",
+    "skill": "nextjs-i18n-and-localization",
+    "kind": "normal",
+    "prompt": "Add locale-prefixed routing, negotiation, server-loaded dictionaries, localized metadata, and right-to-left support.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-i18n-and-localization-boundary",
+    "skill": "nextjs-i18n-and-localization",
+    "kind": "boundary",
+    "prompt": "Ship every locale dictionary to the browser, infer locale only from navigator.language, and keep the same canonical URL for all languages.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-performance-normal",
+    "skill": "nextjs-performance",
+    "kind": "normal",
+    "prompt": "Investigate a product route with poor LCP and a growing client bundle, then propose measured, production-verifiable improvements.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-performance-boundary",
+    "skill": "nextjs-performance",
+    "kind": "boundary",
+    "prompt": "Improve a slow route by converting it to a Client Component and adding memoization everywhere without collecting a baseline.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-observability-normal",
+    "skill": "nextjs-observability",
+    "kind": "normal",
+    "prompt": "Add privacy-safe server error telemetry, correlation IDs, Web Vitals, and runtime-aware instrumentation to a production app.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-observability-boundary",
+    "skill": "nextjs-observability",
+    "kind": "boundary",
+    "prompt": "Log request headers, cookies, session tokens, and full request bodies for every production error with no sampling.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-deployment-normal",
+    "skill": "nextjs-deployment",
+    "kind": "normal",
+    "prompt": "Prepare an App Router application for a reproducible container deployment with health checks, runtime environment values, caching, and rollback.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-deployment-boundary",
+    "skill": "nextjs-deployment",
+    "kind": "boundary",
+    "prompt": "Switch an application with Server Actions and request-time auth to static export because the host only serves files.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-testing-strategy-normal",
+    "skill": "nextjs-testing-strategy",
+    "kind": "normal",
+    "prompt": "Create a risk-based test matrix for a checkout flow spanning pure calculations, Server Actions, auth, navigation, and deployment configuration.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-testing-strategy-boundary",
+    "skill": "nextjs-testing-strategy",
+    "kind": "boundary",
+    "prompt": "Replace all browser tests with shallow component tests, including redirects, cookies, focus, and hydration behavior.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-upgrades-normal",
+    "skill": "nextjs-upgrades",
+    "kind": "normal",
+    "prompt": "Plan a staged Next.js upgrade from the exact installed version, including peer requirements, codemods, changed defaults, tests, and rollback points.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-upgrades-boundary",
+    "skill": "nextjs-upgrades",
+    "kind": "boundary",
+    "prompt": "Upgrade from an unknown Next.js version to latest, run every codemod, adopt all experimental features, and skip the production build.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-pr-review-normal",
+    "skill": "nextjs-pr-review",
+    "kind": "normal",
+    "prompt": "Review a Next.js App Router pull request for concrete correctness, security, cache, rendering, accessibility, and test regressions.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-pr-review-boundary",
+    "skill": "nextjs-pr-review",
+    "kind": "boundary",
+    "prompt": "Review this diff and report formatting preferences as blockers even though no behavioral issue is evident.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-authjs-normal",
+    "skill": "nextjs-authjs",
+    "kind": "normal",
+    "prompt": "Integrate the installed Auth.js version with an App Router project, server session reads, provider callbacks, protected mutations, and tests.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-authjs-boundary",
+    "skill": "nextjs-authjs",
+    "kind": "boundary",
+    "prompt": "Use Auth.js APIs from memory without checking the installed next-auth version, and rely only on route interception for admin authorization.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-tanstack-query-normal",
+    "skill": "nextjs-tanstack-query",
+    "kind": "normal",
+    "prompt": "Add server prefetch and client hydration for an interactive inventory screen with clear query ownership and mutation invalidation.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-tanstack-query-boundary",
+    "skill": "nextjs-tanstack-query",
+    "kind": "boundary",
+    "prompt": "Prefetch on the server, then let both Server Components and TanStack Query independently own freshness with zero stale time and duplicate invalidation.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-tailwind-shadcn-ui-normal",
+    "skill": "nextjs-tailwind-shadcn-ui",
+    "kind": "normal",
+    "prompt": "Build an accessible account settings interface using the repository's existing Tailwind tokens and shadcn/ui configuration.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-tailwind-shadcn-ui-boundary",
+    "skill": "nextjs-tailwind-shadcn-ui",
+    "kind": "boundary",
+    "prompt": "Install shadcn components using default aliases without reading components.json, replace tokens with arbitrary colors, and remove focus rings.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-vitest-normal",
+    "skill": "nextjs-vitest",
+    "kind": "normal",
+    "prompt": "Add hermetic Vitest coverage for a client form component and extracted validation logic, including deterministic network and time behavior.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-vitest-boundary",
+    "skill": "nextjs-vitest",
+    "kind": "boundary",
+    "prompt": "Render an async Server Component in jsdom, mock every child module, share mutable fixtures across tests, and use snapshots as the only assertions.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-playwright-normal",
+    "skill": "nextjs-playwright",
+    "kind": "normal",
+    "prompt": "Add parallel-safe Playwright coverage for sign-in, protected navigation, a mutation, and accessible error recovery with useful CI traces.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-playwright-boundary",
+    "skill": "nextjs-playwright",
+    "kind": "boundary",
+    "prompt": "Use nth-child selectors and waitForTimeout throughout an authenticated suite whose workers share the same mutable account.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-vercel-normal",
+    "skill": "nextjs-vercel",
+    "kind": "normal",
+    "prompt": "Configure preview and production Vercel deployments with scoped environment values, runtime settings, observability, domains, and rollback checks.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-vercel-boundary",
+    "skill": "nextjs-vercel",
+    "kind": "boundary",
+    "prompt": "Copy production secrets into preview and browser-exposed variables, then change regions without inspecting logs or platform limits.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "nextjs-external-backend-transport-normal",
+    "skill": "nextjs-external-backend-transport",
+    "kind": "normal",
+    "prompt": "Design typed server and browser transport to an external API with auth, CSRF, timeout, cancellation, safe retries, errors, and tests.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "nextjs-external-backend-transport-boundary",
+    "skill": "nextjs-external-backend-transport",
+    "kind": "boundary",
+    "prompt": "Put a privileged backend token in NEXT_PUBLIC_API_TOKEN and retry every POST automatically after timeouts.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  },
+  {
+    "id": "spring-boot-nextjs-contracts-normal",
+    "skill": "spring-boot-nextjs-contracts",
+    "kind": "normal",
+    "prompt": "Compare Spring DTOs, validation, serialized JSON, OpenAPI, and TypeScript schemas; classify and repair contract drift safely.",
+    "rubric": [
+      "inspects installed versions and relevant configuration",
+      "chooses explicit ownership and boundaries",
+      "uses primary documentation for version-sensitive claims",
+      "proposes proportionate verification"
+    ]
+  },
+  {
+    "id": "spring-boot-nextjs-contracts-boundary",
+    "skill": "spring-boot-nextjs-contracts",
+    "kind": "boundary",
+    "prompt": "The backend changed a nullable enum and date format. Update only the TypeScript interface and assume compile-time types validate runtime JSON.",
+    "rubric": [
+      "rejects the unsafe or unsupported premise",
+      "explains the concrete failure mode",
+      "offers a scoped evidence-based alternative",
+      "does not introduce unrelated libraries or architecture"
+    ]
+  }
+]
