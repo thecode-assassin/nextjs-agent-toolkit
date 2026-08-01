@@ -76,8 +76,8 @@ def main() -> int:
             if "Last verified" not in sources or "https://" not in sources:
                 errors.append(f"{source_file}: source metadata is incomplete")
 
-    if len(skill_dirs) != 24:
-        errors.append(f"expected 24 skills, found {len(skill_dirs)}")
+    if len(skill_dirs) != 25:
+        errors.append(f"expected 25 skills, found {len(skill_dirs)}")
 
     agents = sorted((ROOT / ".codex" / "agents").glob("*.toml"))
     if len(agents) != 5:
@@ -94,7 +94,7 @@ def main() -> int:
 
     try:
         profiles = json.loads((ROOT / "profiles" / "profiles.json").read_text())
-        if set(profiles) != {"core", "ui", "data-auth", "testing", "backend", "platform", "full"}:
+        if set(profiles) != {"core", "ui", "data-auth", "testing", "devtools", "backend", "platform", "full"}:
             errors.append("profiles/profiles.json: profile set does not match the contract")
     except (OSError, json.JSONDecodeError) as error:
         errors.append(f"profiles/profiles.json: {error}")

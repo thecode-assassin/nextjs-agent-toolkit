@@ -1,0 +1,6 @@
+interface:
+  display_name: "Next.js DevTools MCP"
+  short_description: "Configure and use Next.js DevTools MCP"
+  default_prompt: "Use $nextjs-devtools-mcp to configure and apply Next.js DevTools MCP for this project."
+policy:
+  allow_implicit_invocation: false

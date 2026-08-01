@@ -23,8 +23,9 @@
 | Tailwind and shadcn/ui | `nextjs-tailwind-shadcn-ui` | Adapter |
 | Vitest | `nextjs-vitest` | Adapter |
 | Playwright | `nextjs-playwright` | Adapter |
+| Next.js DevTools MCP | `nextjs-devtools-mcp` | Adapter |
 | Vercel | `nextjs-vercel` | Adapter |
 | External HTTP backend | `nextjs-external-backend-transport` | Adapter |
 | Spring Boot contracts | `spring-boot-nextjs-contracts` | Adapter |
 
-The core covers the complete framework workflow without requiring an optional UI, auth, data, testing, backend, or hosting library. Adapters add operational detail only when their technology is present or explicitly requested.
+The core covers the complete framework workflow without requiring an optional UI, auth, data, testing, developer-tool, backend, or hosting integration. Adapters add operational detail only when their technology is present or explicitly requested.

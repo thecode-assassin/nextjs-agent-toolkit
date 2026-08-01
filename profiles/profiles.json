@@ -20,7 +20,8 @@
   "ui": ["@core", "nextjs-tailwind-shadcn-ui"],
   "data-auth": ["@core", "nextjs-authjs", "nextjs-tanstack-query"],
   "testing": ["@core", "nextjs-vitest", "nextjs-playwright"],
+  "devtools": ["@core", "nextjs-devtools-mcp"],
   "backend": ["@core", "nextjs-external-backend-transport", "spring-boot-nextjs-contracts"],
   "platform": ["@core", "nextjs-vercel"],
-  "full": ["@ui", "@data-auth", "@testing", "@backend", "@platform"]
+  "full": ["@ui", "@data-auth", "@testing", "@devtools", "@backend", "@platform"]
 }

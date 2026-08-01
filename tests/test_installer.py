@@ -24,7 +24,7 @@ class InstallerTests(unittest.TestCase):
             agents = base / "agents"
             args = ("--profile", "full", "--skills-dir", str(skills), "--agents-dir", str(agents))
             self.run_installer(*args)
-            self.assertEqual(len(list(skills.iterdir())), 24)
+            self.assertEqual(len(list(skills.iterdir())), 25)
             self.assertEqual(len(list(agents.iterdir())), 5)
             self.run_installer(*args)
             self.run_installer(*args, "--uninstall")
@@ -32,7 +32,16 @@ class InstallerTests(unittest.TestCase):
             self.assertEqual(list(agents.iterdir()), [])
 
     def test_profiles_install_expected_union(self) -> None:
-        expected = {"core": 16, "ui": 17, "data-auth": 18, "testing": 18, "backend": 18, "platform": 17, "full": 24}
+        expected = {
+            "core": 16,
+            "ui": 17,
+            "data-auth": 18,
+            "testing": 18,
+            "devtools": 17,
+            "backend": 18,
+            "platform": 17,
+            "full": 25,
+        }
         for profile, count in expected.items():
             with self.subTest(profile=profile), tempfile.TemporaryDirectory() as temp:
                 base = Path(temp)

@@ -105,6 +105,11 @@
     "description": "Configure, write, and debug Playwright end-to-end tests for Next.js App Router projects, including production-like startup, navigation, authentication state, fixtures, network boundaries, accessibility, and CI artifacts. Use only when Playwright is installed or explicitly requested."
   },
   {
+    "name": "nextjs-devtools-mcp",
+    "title": "Next.js DevTools MCP",
+    "description": "Configure and use the optional Next.js DevTools MCP integration for App Router projects. Use when explicitly asked to scaffold or configure a project with next-devtools-mcp, inspect a running application's errors or metadata, query official Next.js documentation, perform supported migrations or Cache Components setup, or verify behavior through its browser tools."
+  },
+  {
     "name": "nextjs-vercel",
     "title": "Next.js on Vercel",
     "description": "Configure, deploy, and diagnose Next.js App Router projects on Vercel, including build settings, environments, functions, regions, caching, image behavior, observability, previews, domains, and rollbacks. Use only for Vercel targets or when Vercel configuration is present."

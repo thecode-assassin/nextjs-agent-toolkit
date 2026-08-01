@@ -1,6 +1,6 @@
 # nextjs-agent-toolkit
 
-Private, personal Codex tooling for the full Next.js App Router workflow. The repository contains 24 reusable skills, five focused Codex agents, a project-context detector, profile-based symlink installation, validation, tests, and eval cases.
+Private, personal Codex tooling for the full Next.js App Router workflow. The repository contains 25 reusable skills, five focused Codex agents, a project-context detector, profile-based symlink installation, validation, tests, and eval cases.
 
 The toolkit is framework-first and project-neutral. It inspects the installed Next.js version and active configuration instead of assuming one framework release. Optional stack skills activate only when their library is installed or explicitly requested.
 
@@ -27,11 +27,11 @@ The toolkit is framework-first and project-neutral. It inspects the installed Ne
 | `docs/` | Holds longer-lived repository documentation: the capability matrix, version-detection policy, and maintenance workflow. |
 | `evals/` | Stores the machine-readable evaluation suite. `cases.json` provides one normal case and one misuse or boundary case for every skill. |
 | `fixtures/` | Provides small, non-production Next.js project shapes for testing context detection across versions, proxy or middleware conventions, integrations, static configuration, dynamic configuration, and invalid input. |
-| `profiles/` | Defines the skill sets installed by `core`, `ui`, `data-auth`, `testing`, `backend`, `platform`, and `full`. Profile references are expanded and deduplicated by the installer. |
+| `profiles/` | Defines the skill sets installed by `core`, `ui`, `data-auth`, `testing`, `devtools`, `backend`, `platform`, and `full`. Profile references are expanded and deduplicated by the installer. |
 | `references/` | Contains repository-level metadata used by validation and tooling. `skill-catalog.json` is the canonical machine-readable list of skill names, titles, and trigger descriptions. |
 | `scripts/` | Contains the symlink installer, non-executing Next.js context detector, repository validator, and eval-case runner. These scripts use Python or Node.js standard-library functionality and do not require project dependencies. |
-| `skills/` | Contains the 16 framework capabilities and eight optional stack adapters. Each folder is an independently installable Codex skill with no named dependency on another skill. |
-| `tests/` | Contains standard-library Python unit tests for profile expansion, installation safety, idempotency, uninstall behavior, legacy cleanup, collisions, and context detection. |
+| `skills/` | Contains the 16 framework capabilities and nine optional stack or tool adapters. Each folder is an independently installable Codex skill with no named dependency on another skill. |
+| `tests/` | Contains standard-library Python unit tests for profile expansion, installation safety, idempotency, uninstall behavior, legacy cleanup, collisions, context detection, and MCP project configuration. |
 
 Every folder under `skills/` follows the same layout:
 
@@ -76,11 +76,30 @@ Restart Codex or begin a fresh task after installation so discovery reflects the
 | `ui` | Core plus Tailwind/shadcn UI |
 | `data-auth` | Core plus Auth.js and TanStack Query |
 | `testing` | Core plus Vitest and Playwright |
+| `devtools` | Core plus the explicitly invoked Next.js DevTools MCP integration |
 | `backend` | Core plus generic external transport and Spring Boot contracts |
 | `platform` | Core plus Vercel |
 | `full` | Union of every profile; default |
 
 Install a profile with `python3 scripts/install.py --profile testing`. Uninstall only repo-owned links with `python3 scripts/install.py --profile full --uninstall`. Use `--skills-dir` and `--agents-dir` for isolated testing or a custom Codex setup.
+
+## Next.js DevTools MCP
+
+Install the explicitly invoked integration skill with `python3 scripts/install.py --profile devtools`. It does not install or globally enable an MCP server.
+
+Create a new App Router project with project-scoped Codex configuration:
+
+```bash
+python3 skills/nextjs-devtools-mcp/scripts/create_project.py ../my-app -- --use-pnpm --ts --eslint --tailwind --app --yes
+```
+
+Configure an existing Next.js project:
+
+```bash
+python3 skills/nextjs-devtools-mcp/scripts/configure_project.py /path/to/app
+```
+
+Both scripts support `--dry-run`, `--mcp-package` for a reviewed version pin, `--disable-telemetry`, and `--format mcp-json` for clients that use the official `.mcp.json` format. Existing unrelated MCP entries are preserved; a conflicting `next-devtools` entry is refused rather than overwritten.
 
 ## Project context
 
@@ -100,7 +119,7 @@ The detector reports versions, package manager, App Router location, proxy or mi
 - `nextjs-debugger`: root-cause diagnosis; fixes only when requested
 - `nextjs-migrator`: version upgrades, codemods, and router migrations
 
-The agent files intentionally omit a fixed model and MCP configuration. They inherit the parent session. Next.js DevTools MCP may be configured separately in Codex for live runtime inspection, but no skill or agent depends on it.
+The agent files intentionally omit a fixed model and MCP configuration. They inherit the parent session. The explicitly invoked `nextjs-devtools-mcp` skill can scaffold a new App Router project or add project-scoped MCP configuration without making any other skill or agent depend on the server.
 
 ## Validate and evaluate
 
